@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4G x CHEATZ - Premium Panels</title>
+    <!-- Google Fonts for Gaming Vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #090c10;
+            color: #ffffff;
+            font-family: 'Rajdhani', sans-serif;
+            background-image: radial-gradient(circle at center, #1a2333 0%, #090c10 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        /* 01. Glowing Logo CSS */
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .glowing-circle {
+            width: 150px; /* ලෝගෝ එක ටිකක් ලොකු කළා හොඳට පේන්න */
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00f3ff;
+            box-shadow: 0 0 25px #00f3ff, inset 0 0 20px #00f3ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 243, 255, 0.1);
+            overflow: hidden; /* රවුමෙන් එළියට යන කෑලි කපලා දාන්න */
+            animation: pulse 2s infinite alternate;
+        }
+
+        /* පින්තූරය රවුමටම fit වෙන්න හදපු CSS */
+        .glowing-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* පින්තූරය රවුම ඇතුලේ ලස්සනට පිරෙන්න */
+            border-radius: 50%;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 15px #00f3ff, inset 0 0 15px #00f3ff; }
+            100% { box-shadow: 0 0 35px #00f3ff, inset 0 0 30px #00f3ff; }
+        }
+
+        /* Header Text */
+        .header-text {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header-text h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00f3ff, #aa00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header-text p {
+            font-size: 18px;
+            color: #a3b3cc;
+        }
+
+        /* Buttons Section CSS */
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 600px) {
+            .buttons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .neon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(5px);
+        }
+
+        .neon-btn i {
+            font-size: 24px;
+        }
+
+        /* 02 & 03. WhatsApp Buttons */
+        .btn-wa {
+            border: 2px solid #25D366;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
+        }
+        .btn-wa:hover {
+            background-color: #25D366;
+            box-shadow: 0 0 25px #25D366;
+            color: #000;
+        }
+
+        /* 04. Telegram Button */
+        .btn-tg {
+            border: 2px solid #0088cc;
+            box-shadow: 0 0 15px rgba(0, 136, 204, 0.3);
+        }
+        .btn-tg:hover {
+            background-color: #0088cc;
+            box-shadow: 0 0 25px #0088cc;
+            color: #fff;
+        }
+
+        /* 05. TikTok Button */
+        .btn-tt {
+            border: 2px solid #ff0050;
+            box-shadow: 0 0 15px rgba(255, 0, 80, 0.3);
+        }
+        .btn-tt:hover {
+            background-color: #ff0050;
+            box-shadow: 0 0 25px #ff0050;
+            color: #fff;
+        }
+
+        /* Features / Info Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            max-width: 200px;
+        }
+
+        .feature-item i {
+            font-size: 35px;
+            color: #00f3ff;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px #00f3ff;
+        }
+
+        .feature-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .feature-item p {
+            font-size: 14px;
+            color: #8b9bb4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 01. Glowing Logo -->
+    <div class="logo-container">
+        <div class="glowing-circle">
+            <!-- ඔයාගේ පින්තූරය මෙතනට දැම්මා -->
+            <img src="image.png" alt="S4G x CHEATZ Logo">
+        </div>
+    </div>
+
+    <div class="header-text">
+        <!-- නමත් ඔයාගේ පින්තූරෙ තියෙන විදිහට අලුත් කළා -->
+        <h1>S4G x CHEATZ</h1>
+        <p>Sri Lanka Trusted Android/iOS/PC Panel Seller</p>
+    </div>
+
+    <!-- Contact Buttons -->
+    <div class="buttons-grid">
+        <!-- 02. Whatsapp channel button -->
+        <a href="https://whatsapp.com/channel/0029Vb8uFYVKWEKt8hHb9S2w" target="_blank" class="neon-btn btn-wa">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Channel
+        </a>
+        
+        <!-- 03. Whatsapp number button -->
+        <a href="https://wa.me/94712237687" target="_blank" class="neon-btn btn-wa">
+            <i class="fa-solid fa-phone"></i> WhatsApp Number
+        </a>
+
+        <!-- 04. Telegram contact button -->
+        <a href="https://t.me/ban_s4g" target="_blank" class="neon-btn btn-tg">
+            <i class="fa-brands fa-telegram"></i> Telegram Contact
+        </a>
+
+        <!-- 05. TT account button -->
+        <a href="https://www.tiktok.com/@bans4g?_r=1&_t=ZS-99lWGs3FAzi" target="_blank" class="neon-btn btn-tt">
+            <i class="fa-brands fa-tiktok"></i> TikTok Account
+        </a>
+    </div>
+
+    <!-- Web info (Features) -->
+    <div class="features">
+        <div class="feature-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>100% Anti-Ban</h3>
+            <p>Our panels are highly secure with bypass technology to keep your main ID safe.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Instant Delivery</h3>
+            <p>Get access to your premium panel immediately after successful payment.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Our team is always online to help you with setups and updates.</p>
+        </div>
+    </div>
+
+</body>
+</html>
